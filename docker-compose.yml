@@ -1,0 +1,10 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    platform: linux/amd64
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
